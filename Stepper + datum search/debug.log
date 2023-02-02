@@ -1,0 +1,341 @@
+2022-08-17 16:14:44,653 [DEBUG] Setting up app
+2022-08-17 16:14:44,681 [DEBUG] Setting up serial with params: {'self': <driver.StepperController.StepperController object at 0x0000017DA362B208>, 'comport': 'COM3', 'baudrate': 9600, 'parity': 'E', 'databits': 7, 'stopbits': 1, 'xonxoff': False}
+2022-08-17 16:14:44,683 [DEBUG] Opening serial
+2022-08-17 16:14:44,684 [DEBUG] Serial open
+2022-08-17 16:14:45,007 [DEBUG] Setting up app - done
+2022-08-17 16:15:01,380 [DEBUG] Write command '1SV10000'
+2022-08-17 16:15:01,403 [DEBUG] Readback: 1SV1000001:OK
+
+2022-08-17 16:15:01,404 [DEBUG] Write command '1HD-1'
+2022-08-17 16:15:01,434 [DEBUG] Readback: 1HD-101:! HARD LIMIT
+
+2022-08-17 16:15:01,439 [DEBUG] Read command: 1CO
+2022-08-17 16:15:01,445 [DEBUG] here
+2022-08-17 16:15:01,465 [DEBUG] Readback: b'1CO\r01:Idle\r\n'
+2022-08-17 16:15:01,465 [DEBUG] Current operation: b'1CO\r01:Idle\r\n'
+2022-08-17 16:15:01,467 [DEBUG] Write command '1CR-2000'
+2022-08-17 16:15:01,503 [DEBUG] Readback: 1CR-200001:! OUT OF RANGE
+
+2022-08-17 16:15:01,504 [DEBUG] Write command '1SC50'
+2022-08-17 16:15:01,523 [DEBUG] Readback: 1SC5001:OK
+
+2022-08-17 16:15:01,524 [DEBUG] Write command '1MR2000'
+2022-08-17 16:15:01,546 [DEBUG] Readback: 1MR200001:OK
+
+2022-08-17 16:15:01,547 [DEBUG] Read command: 1CO
+2022-08-17 16:15:01,548 [DEBUG] here
+2022-08-17 16:15:01,567 [DEBUG] Readback: b'1CO\r01:Move\r\n'
+2022-08-17 16:15:01,569 [DEBUG] Current operation: b'1CO\r01:Move\r\n'
+2022-08-17 16:15:02,570 [DEBUG] Read command: 1CO
+2022-08-17 16:15:02,570 [DEBUG] here
+2022-08-17 16:15:02,590 [DEBUG] Readback: b'1CO\r01:Move\r\n'
+2022-08-17 16:15:02,591 [DEBUG] Current operation: b'1CO\r01:Move\r\n'
+2022-08-17 16:15:03,593 [DEBUG] Read command: 1CO
+2022-08-17 16:15:03,593 [DEBUG] here
+2022-08-17 16:15:03,617 [DEBUG] Readback: b'1CO\r01:Settling\r\n'
+2022-08-17 16:15:03,618 [DEBUG] Current operation: b'1CO\r01:Settling\r\n'
+2022-08-17 16:15:04,620 [DEBUG] Read command: 1CO
+2022-08-17 16:15:04,621 [DEBUG] here
+2022-08-17 16:15:04,640 [DEBUG] Readback: b'1CO\r01:Idle\r\n'
+2022-08-17 16:15:04,640 [DEBUG] Current operation: b'1CO\r01:Idle\r\n'
+2022-08-17 16:15:04,642 [DEBUG] Write command '1HD-1'
+2022-08-17 16:15:04,662 [DEBUG] Readback: 1HD-101:OK
+
+2022-08-17 16:15:15,899 [DEBUG] Read command: 1QP
+2022-08-17 16:15:15,900 [DEBUG] here
+2022-08-17 16:15:15,970 [DEBUG] Readback: b'1QP\r01:CP = -206790  AP = 0  IP = 0  TP = 0  OD = -206758\r\n'
+2022-08-17 16:16:54,443 [DEBUG] Write command '1MR160000'
+2022-08-17 16:16:54,467 [DEBUG] Readback: 1MR16000001:OK
+
+2022-08-17 16:21:52,465 [DEBUG] Read command: 1QP
+2022-08-17 16:21:52,466 [DEBUG] here
+2022-08-17 16:21:52,535 [DEBUG] Readback: b'1QP\r01:CP = -47129  AP = 0  IP = 0  TP = 0  OD = -206758\r\n'
+2022-08-17 16:23:41,569 [DEBUG] Write command '1SV10000'
+2022-08-17 16:23:41,592 [DEBUG] Readback: 1SV1000001:OK
+
+2022-08-17 16:23:41,594 [DEBUG] Write command '1HD-1'
+2022-08-17 16:23:41,614 [DEBUG] Readback: 1HD-101:OK
+
+2022-08-17 16:23:41,619 [DEBUG] Read command: 1CO
+2022-08-17 16:23:41,626 [DEBUG] here
+2022-08-17 16:23:41,655 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:41,657 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:42,661 [DEBUG] Read command: 1CO
+2022-08-17 16:23:42,661 [DEBUG] here
+2022-08-17 16:23:42,691 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:42,692 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:43,693 [DEBUG] Read command: 1CO
+2022-08-17 16:23:43,694 [DEBUG] here
+2022-08-17 16:23:43,723 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:43,724 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:44,725 [DEBUG] Read command: 1CO
+2022-08-17 16:23:44,726 [DEBUG] here
+2022-08-17 16:23:44,755 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:44,756 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:45,758 [DEBUG] Read command: 1CO
+2022-08-17 16:23:45,759 [DEBUG] here
+2022-08-17 16:23:45,789 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:45,789 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:46,791 [DEBUG] Read command: 1CO
+2022-08-17 16:23:46,791 [DEBUG] here
+2022-08-17 16:23:46,822 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:46,823 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:47,829 [DEBUG] Read command: 1CO
+2022-08-17 16:23:47,829 [DEBUG] here
+2022-08-17 16:23:47,859 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:47,860 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:48,865 [DEBUG] Read command: 1CO
+2022-08-17 16:23:48,865 [DEBUG] here
+2022-08-17 16:23:48,895 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:48,895 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:49,902 [DEBUG] Read command: 1CO
+2022-08-17 16:23:49,902 [DEBUG] here
+2022-08-17 16:23:49,932 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:49,933 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:50,934 [DEBUG] Read command: 1CO
+2022-08-17 16:23:50,934 [DEBUG] here
+2022-08-17 16:23:50,964 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:50,965 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:51,967 [DEBUG] Read command: 1CO
+2022-08-17 16:23:51,967 [DEBUG] here
+2022-08-17 16:23:51,997 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:51,998 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:52,999 [DEBUG] Read command: 1CO
+2022-08-17 16:23:52,999 [DEBUG] here
+2022-08-17 16:23:53,029 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:53,030 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:54,031 [DEBUG] Read command: 1CO
+2022-08-17 16:23:54,032 [DEBUG] here
+2022-08-17 16:23:54,061 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:54,062 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:55,063 [DEBUG] Read command: 1CO
+2022-08-17 16:23:55,063 [DEBUG] here
+2022-08-17 16:23:55,093 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:55,094 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:56,095 [DEBUG] Read command: 1CO
+2022-08-17 16:23:56,095 [DEBUG] here
+2022-08-17 16:23:56,125 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:56,126 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:23:57,128 [DEBUG] Read command: 1CO
+2022-08-17 16:23:57,128 [DEBUG] here
+2022-08-17 16:23:57,148 [DEBUG] Readback: b'1CO\r01:Idle\r\n'
+2022-08-17 16:23:57,149 [DEBUG] Current operation: b'1CO\r01:Idle\r\n'
+2022-08-17 16:23:57,151 [DEBUG] Write command '1CR-2000'
+2022-08-17 16:23:57,187 [DEBUG] Readback: 1CR-200001:! OUT OF RANGE
+
+2022-08-17 16:23:57,190 [DEBUG] Write command '1SC50'
+2022-08-17 16:23:57,210 [DEBUG] Readback: 1SC5001:OK
+
+2022-08-17 16:23:57,212 [DEBUG] Write command '1MR2000'
+2022-08-17 16:23:57,235 [DEBUG] Readback: 1MR200001:OK
+
+2022-08-17 16:23:57,237 [DEBUG] Read command: 1CO
+2022-08-17 16:23:57,243 [DEBUG] here
+2022-08-17 16:23:57,263 [DEBUG] Readback: b'1CO\r01:Move\r\n'
+2022-08-17 16:23:57,264 [DEBUG] Current operation: b'1CO\r01:Move\r\n'
+2022-08-17 16:23:58,265 [DEBUG] Read command: 1CO
+2022-08-17 16:23:58,265 [DEBUG] here
+2022-08-17 16:23:58,285 [DEBUG] Readback: b'1CO\r01:Move\r\n'
+2022-08-17 16:23:58,286 [DEBUG] Current operation: b'1CO\r01:Move\r\n'
+2022-08-17 16:23:59,287 [DEBUG] Read command: 1CO
+2022-08-17 16:23:59,288 [DEBUG] here
+2022-08-17 16:23:59,307 [DEBUG] Readback: b'1CO\r01:Idle\r\n'
+2022-08-17 16:23:59,308 [DEBUG] Current operation: b'1CO\r01:Idle\r\n'
+2022-08-17 16:23:59,309 [DEBUG] Write command '1HD-1'
+2022-08-17 16:23:59,329 [DEBUG] Readback: 1HD-101:OK
+
+2022-08-17 16:25:18,640 [DEBUG] Write command '1MR159629'
+2022-08-17 16:25:18,663 [DEBUG] Readback: 1MR15962901:OK
+
+2022-08-17 16:26:17,375 [DEBUG] Read command: 1QP
+2022-08-17 16:26:17,376 [DEBUG] here
+2022-08-17 16:26:17,443 [DEBUG] Readback: b'1QP\r01:CP = 35539  AP = 0  IP = 0  TP = 0  OD = -124064\r\n'
+2022-08-17 16:27:29,023 [DEBUG] Write command '1CR1000'
+2022-08-17 16:27:29,044 [DEBUG] Readback: 1CR100001:OK
+
+2022-08-17 16:27:53,566 [DEBUG] Write command '1SC1000'
+2022-08-17 16:27:53,601 [DEBUG] Readback: 1SC100001:! OUT OF RANGE
+
+2022-08-17 16:27:58,583 [DEBUG] Write command '1SV10000'
+2022-08-17 16:27:58,605 [DEBUG] Readback: 1SV1000001:OK
+
+2022-08-17 16:27:58,606 [DEBUG] Write command '1HD-1'
+2022-08-17 16:27:58,626 [DEBUG] Readback: 1HD-101:OK
+
+2022-08-17 16:27:58,627 [DEBUG] Read command: 1CO
+2022-08-17 16:27:58,628 [DEBUG] here
+2022-08-17 16:27:58,657 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:27:58,657 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:27:59,659 [DEBUG] Read command: 1CO
+2022-08-17 16:27:59,659 [DEBUG] here
+2022-08-17 16:27:59,689 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:27:59,690 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:00,692 [DEBUG] Read command: 1CO
+2022-08-17 16:28:00,692 [DEBUG] here
+2022-08-17 16:28:00,722 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:00,722 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:01,724 [DEBUG] Read command: 1CO
+2022-08-17 16:28:01,724 [DEBUG] here
+2022-08-17 16:28:01,754 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:01,755 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:02,756 [DEBUG] Read command: 1CO
+2022-08-17 16:28:02,757 [DEBUG] here
+2022-08-17 16:28:02,787 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:02,787 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:03,788 [DEBUG] Read command: 1CO
+2022-08-17 16:28:03,788 [DEBUG] here
+2022-08-17 16:28:03,819 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:03,819 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:04,821 [DEBUG] Read command: 1CO
+2022-08-17 16:28:04,822 [DEBUG] here
+2022-08-17 16:28:04,852 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:04,852 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:05,859 [DEBUG] Read command: 1CO
+2022-08-17 16:28:05,859 [DEBUG] here
+2022-08-17 16:28:05,889 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:05,889 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:06,891 [DEBUG] Read command: 1CO
+2022-08-17 16:28:06,891 [DEBUG] here
+2022-08-17 16:28:06,921 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:06,921 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:07,924 [DEBUG] Read command: 1CO
+2022-08-17 16:28:07,924 [DEBUG] here
+2022-08-17 16:28:07,953 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:07,954 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:08,955 [DEBUG] Read command: 1CO
+2022-08-17 16:28:08,955 [DEBUG] here
+2022-08-17 16:28:08,985 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:08,986 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:09,987 [DEBUG] Read command: 1CO
+2022-08-17 16:28:09,987 [DEBUG] here
+2022-08-17 16:28:10,017 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:10,019 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:11,023 [DEBUG] Read command: 1CO
+2022-08-17 16:28:11,024 [DEBUG] here
+2022-08-17 16:28:11,053 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:11,054 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:12,060 [DEBUG] Read command: 1CO
+2022-08-17 16:28:12,061 [DEBUG] here
+2022-08-17 16:28:12,090 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:12,091 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:13,095 [DEBUG] Read command: 1CO
+2022-08-17 16:28:13,095 [DEBUG] here
+2022-08-17 16:28:13,125 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:13,126 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:14,127 [DEBUG] Read command: 1CO
+2022-08-17 16:28:14,127 [DEBUG] here
+2022-08-17 16:28:14,157 [DEBUG] Readback: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:14,158 [DEBUG] Current operation: b'1CO\r01:Home to datum\r\n'
+2022-08-17 16:28:15,161 [DEBUG] Read command: 1CO
+2022-08-17 16:28:15,161 [DEBUG] here
+2022-08-17 16:28:15,181 [DEBUG] Readback: b'1CO\r01:Idle\r\n'
+2022-08-17 16:28:15,182 [DEBUG] Current operation: b'1CO\r01:Idle\r\n'
+2022-08-17 16:28:15,184 [DEBUG] Write command '1CR-2000'
+2022-08-17 16:28:15,220 [DEBUG] Readback: 1CR-200001:! OUT OF RANGE
+
+2022-08-17 16:28:15,223 [DEBUG] Write command '1SC50'
+2022-08-17 16:28:15,242 [DEBUG] Readback: 1SC5001:OK
+
+2022-08-17 16:28:15,244 [DEBUG] Write command '1MR2000'
+2022-08-17 16:28:15,267 [DEBUG] Readback: 1MR200001:OK
+
+2022-08-17 16:28:15,273 [DEBUG] Read command: 1CO
+2022-08-17 16:28:15,280 [DEBUG] here
+2022-08-17 16:28:15,300 [DEBUG] Readback: b'1CO\r01:Move\r\n'
+2022-08-17 16:28:15,301 [DEBUG] Current operation: b'1CO\r01:Move\r\n'
+2022-08-17 16:28:16,302 [DEBUG] Read command: 1CO
+2022-08-17 16:28:16,302 [DEBUG] here
+2022-08-17 16:28:16,322 [DEBUG] Readback: b'1CO\r01:Move\r\n'
+2022-08-17 16:28:16,324 [DEBUG] Current operation: b'1CO\r01:Move\r\n'
+2022-08-17 16:28:17,325 [DEBUG] Read command: 1CO
+2022-08-17 16:28:17,326 [DEBUG] here
+2022-08-17 16:28:17,347 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:17,348 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:18,349 [DEBUG] Read command: 1CO
+2022-08-17 16:28:18,350 [DEBUG] here
+2022-08-17 16:28:18,371 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:18,375 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:19,377 [DEBUG] Read command: 1CO
+2022-08-17 16:28:19,377 [DEBUG] here
+2022-08-17 16:28:19,398 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:19,399 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:20,401 [DEBUG] Read command: 1CO
+2022-08-17 16:28:20,401 [DEBUG] here
+2022-08-17 16:28:20,423 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:20,424 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:21,425 [DEBUG] Read command: 1CO
+2022-08-17 16:28:21,425 [DEBUG] here
+2022-08-17 16:28:21,446 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:21,448 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:22,450 [DEBUG] Read command: 1CO
+2022-08-17 16:28:22,451 [DEBUG] here
+2022-08-17 16:28:22,472 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:22,472 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:23,473 [DEBUG] Read command: 1CO
+2022-08-17 16:28:23,474 [DEBUG] here
+2022-08-17 16:28:23,494 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:23,495 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:24,497 [DEBUG] Read command: 1CO
+2022-08-17 16:28:24,497 [DEBUG] here
+2022-08-17 16:28:24,518 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:24,518 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:25,519 [DEBUG] Read command: 1CO
+2022-08-17 16:28:25,519 [DEBUG] here
+2022-08-17 16:28:25,540 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:25,541 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:26,542 [DEBUG] Read command: 1CO
+2022-08-17 16:28:26,543 [DEBUG] here
+2022-08-17 16:28:26,563 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:26,564 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:27,567 [DEBUG] Read command: 1CO
+2022-08-17 16:28:27,567 [DEBUG] here
+2022-08-17 16:28:27,588 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:27,589 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:28,592 [DEBUG] Read command: 1CO
+2022-08-17 16:28:28,592 [DEBUG] here
+2022-08-17 16:28:28,614 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:28,614 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:29,616 [DEBUG] Read command: 1CO
+2022-08-17 16:28:29,617 [DEBUG] here
+2022-08-17 16:28:29,637 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:29,639 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:30,640 [DEBUG] Read command: 1CO
+2022-08-17 16:28:30,641 [DEBUG] here
+2022-08-17 16:28:30,662 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:30,663 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:31,664 [DEBUG] Read command: 1CO
+2022-08-17 16:28:31,665 [DEBUG] here
+2022-08-17 16:28:31,685 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:31,686 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:32,687 [DEBUG] Read command: 1CO
+2022-08-17 16:28:32,687 [DEBUG] here
+2022-08-17 16:28:32,709 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:32,710 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:33,712 [DEBUG] Read command: 1CO
+2022-08-17 16:28:33,713 [DEBUG] here
+2022-08-17 16:28:33,733 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:33,734 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:34,735 [DEBUG] Read command: 1CO
+2022-08-17 16:28:34,736 [DEBUG] here
+2022-08-17 16:28:34,756 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:34,758 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:35,759 [DEBUG] Read command: 1CO
+2022-08-17 16:28:35,759 [DEBUG] here
+2022-08-17 16:28:35,779 [DEBUG] Readback: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:35,781 [DEBUG] Current operation: b'1CO\r01:Creep\r\n'
+2022-08-17 16:28:36,782 [DEBUG] Read command: 1CO
+2022-08-17 16:28:36,783 [DEBUG] here
+2022-08-17 16:28:36,802 [DEBUG] Readback: b'1CO\r01:Idle\r\n'
+2022-08-17 16:28:36,803 [DEBUG] Current operation: b'1CO\r01:Idle\r\n'
+2022-08-17 16:28:36,808 [DEBUG] Write command '1HD-1'
+2022-08-17 16:28:36,828 [DEBUG] Readback: 1HD-101:OK
+
+2022-08-17 16:28:49,413 [DEBUG] Write command '1SC1000'
+2022-08-17 16:28:49,449 [DEBUG] Readback: 1SC100001:! OUT OF RANGE
+
+2022-08-17 16:28:50,038 [DEBUG] Write command '1CR1000'
+2022-08-17 16:28:50,059 [DEBUG] Readback: 1CR100001:OK
+
+2022-08-17 16:28:54,270 [DEBUG] Write command '1MR159629'
+2022-08-17 16:28:54,294 [DEBUG] Readback: 1MR15962901:OK
+

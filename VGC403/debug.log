@@ -1,0 +1,95 @@
+2022-11-30 17:54:26,410 [INFO] Sending 'TID'
+2022-11-30 17:54:26,512 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:26,513 [INFO] Sending ''
+2022-11-30 17:54:26,515 [INFO] Reading back info
+2022-11-30 17:54:26,630 [INFO] readback from setting units: b'PSG,BPG,noSen\r\n'
+2022-11-30 17:54:36,637 [INFO] Sending 'PR1'
+2022-11-30 17:54:36,693 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:36,695 [INFO] Sending ''
+2022-11-30 17:54:36,696 [INFO] Reading back info
+2022-11-30 17:54:36,811 [INFO] b'0, 2.2000E-03\r\n'
+2022-11-30 17:54:36,812 [INFO] Extracted info: (48, 2.2, -3.0)
+2022-11-30 17:54:36,815 [INFO] Sending 'PR2'
+2022-11-30 17:54:36,891 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:36,892 [INFO] Sending ''
+2022-11-30 17:54:36,895 [INFO] Reading back info
+2022-11-30 17:54:37,008 [INFO] b'0, 7.6000E-06\r\n'
+2022-11-30 17:54:37,009 [INFO] Extracted info: (48, 7.6, -6.0)
+2022-11-30 17:54:37,012 [INFO] Sending 'PR3'
+2022-11-30 17:54:37,089 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:37,089 [INFO] Sending ''
+2022-11-30 17:54:37,092 [INFO] Reading back info
+2022-11-30 17:54:37,206 [INFO] b'5, 1.0000E+03\r\n'
+2022-11-30 17:54:37,207 [INFO] Extracted info: (53, 1.0, 3.0)
+2022-11-30 17:54:46,634 [INFO] Sending 'PR1'
+2022-11-30 17:54:46,677 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:46,678 [INFO] Sending ''
+2022-11-30 17:54:46,680 [INFO] Reading back info
+2022-11-30 17:54:46,794 [INFO] b'0, 2.2000E-03\r\n'
+2022-11-30 17:54:46,795 [INFO] Extracted info: (48, 2.2, -3.0)
+2022-11-30 17:54:46,798 [INFO] Sending 'PR2'
+2022-11-30 17:54:46,875 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:46,875 [INFO] Sending ''
+2022-11-30 17:54:46,878 [INFO] Reading back info
+2022-11-30 17:54:46,991 [INFO] b'0, 7.6000E-06\r\n'
+2022-11-30 17:54:46,992 [INFO] Extracted info: (48, 7.6, -6.0)
+2022-11-30 17:54:46,995 [INFO] Sending 'PR3'
+2022-11-30 17:54:47,072 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:47,073 [INFO] Sending ''
+2022-11-30 17:54:47,076 [INFO] Reading back info
+2022-11-30 17:54:47,189 [INFO] b'5, 1.0000E+03\r\n'
+2022-11-30 17:54:47,194 [INFO] Extracted info: (53, 1.0, 3.0)
+2022-11-30 17:54:56,630 [INFO] Sending 'PR1'
+2022-11-30 17:54:56,660 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:56,661 [INFO] Sending ''
+2022-11-30 17:54:56,661 [INFO] Reading back info
+2022-11-30 17:54:56,777 [INFO] b'0, 2.2000E-03\r\n'
+2022-11-30 17:54:56,778 [INFO] Extracted info: (48, 2.2, -3.0)
+2022-11-30 17:54:56,780 [INFO] Sending 'PR2'
+2022-11-30 17:54:56,857 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:56,858 [INFO] Sending ''
+2022-11-30 17:54:56,860 [INFO] Reading back info
+2022-11-30 17:54:56,975 [INFO] b'0, 7.6000E-06\r\n'
+2022-11-30 17:54:56,976 [INFO] Extracted info: (48, 7.6, -6.0)
+2022-11-30 17:54:56,979 [INFO] Sending 'PR3'
+2022-11-30 17:54:57,055 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:54:57,056 [INFO] Sending ''
+2022-11-30 17:54:57,058 [INFO] Reading back info
+2022-11-30 17:54:57,173 [INFO] b'5, 1.0000E+03\r\n'
+2022-11-30 17:54:57,173 [INFO] Extracted info: (53, 1.0, 3.0)
+2022-11-30 17:55:06,630 [INFO] Sending 'PR1'
+2022-11-30 17:55:06,643 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:55:06,645 [INFO] Sending ''
+2022-11-30 17:55:06,648 [INFO] Reading back info
+2022-11-30 17:55:06,761 [INFO] b'0, 2.2000E-03\r\n'
+2022-11-30 17:55:06,761 [INFO] Extracted info: (48, 2.2, -3.0)
+2022-11-30 17:55:06,764 [INFO] Sending 'PR2'
+2022-11-30 17:55:06,841 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:55:06,842 [INFO] Sending ''
+2022-11-30 17:55:06,845 [INFO] Reading back info
+2022-11-30 17:55:06,959 [INFO] b'0, 7.6000E-06\r\n'
+2022-11-30 17:55:06,959 [INFO] Extracted info: (48, 7.6, -6.0)
+2022-11-30 17:55:06,962 [INFO] Sending 'PR3'
+2022-11-30 17:55:07,038 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:55:07,039 [INFO] Sending ''
+2022-11-30 17:55:07,042 [INFO] Reading back info
+2022-11-30 17:55:07,156 [INFO] b'5, 1.0000E+03\r\n'
+2022-11-30 17:55:07,157 [INFO] Extracted info: (53, 1.0, 3.0)
+2022-11-30 17:55:16,641 [INFO] Sending 'PR1'
+2022-11-30 17:55:16,726 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:55:16,726 [INFO] Sending ''
+2022-11-30 17:55:16,729 [INFO] Reading back info
+2022-11-30 17:55:16,843 [INFO] b'0, 2.2000E-03\r\n'
+2022-11-30 17:55:16,843 [INFO] Extracted info: (48, 2.2, -3.0)
+2022-11-30 17:55:16,847 [INFO] Sending 'PR2'
+2022-11-30 17:55:16,923 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:55:16,924 [INFO] Sending ''
+2022-11-30 17:55:16,927 [INFO] Reading back info
+2022-11-30 17:55:17,040 [INFO] b'0, 7.6000E-06\r\n'
+2022-11-30 17:55:17,041 [INFO] Extracted info: (48, 7.6, -6.0)
+2022-11-30 17:55:17,045 [INFO] Sending 'PR3'
+2022-11-30 17:55:17,121 [INFO] Readback: b'\x06\r\n'
+2022-11-30 17:55:17,122 [INFO] Sending ''
+2022-11-30 17:55:17,125 [INFO] Reading back info
+2022-11-30 17:55:17,238 [INFO] b'5, 1.0000E+03\r\n'
+2022-11-30 17:55:17,238 [INFO] Extracted info: (53, 1.0, 3.0)

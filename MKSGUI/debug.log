@@ -1,0 +1,60 @@
+2022-07-18 10:28:17,670 [DEBUG] Setting up app
+2022-07-18 10:28:17,764 [DEBUG] Init MainWindow
+2022-07-18 10:28:17,765 [DEBUG] Setting up MksEthWidget with ip 192.168.2.155
+2022-07-18 10:28:17,767 [DEBUG] Waiting for task
+2022-07-18 10:28:18,175 [DEBUG] Setting up app - done
+2022-07-18 10:28:18,760 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:28:39,799 [WARNING] Task failed
+2022-07-18 10:28:39,799 [DEBUG] Waiting for task
+2022-07-18 10:28:39,799 [INFO] No new sample
+2022-07-18 10:28:39,799 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:29:00,840 [WARNING] Task failed
+2022-07-18 10:29:00,840 [DEBUG] Waiting for task
+2022-07-18 10:29:00,840 [INFO] No new sample
+2022-07-18 10:29:00,840 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:29:21,870 [WARNING] Task failed
+2022-07-18 10:29:21,870 [DEBUG] Waiting for task
+2022-07-18 10:29:21,870 [INFO] No new sample
+2022-07-18 10:29:21,870 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:29:42,919 [WARNING] Task failed
+2022-07-18 10:29:42,919 [DEBUG] Waiting for task
+2022-07-18 10:29:42,919 [INFO] No new sample
+2022-07-18 10:29:42,919 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:30:03,951 [WARNING] Task failed
+2022-07-18 10:30:03,951 [DEBUG] Waiting for task
+2022-07-18 10:30:03,951 [INFO] No new sample
+2022-07-18 10:30:03,951 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:30:25,011 [WARNING] Task failed
+2022-07-18 10:30:25,011 [DEBUG] Waiting for task
+2022-07-18 10:30:25,011 [INFO] No new sample
+2022-07-18 10:30:25,011 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:30:46,068 [WARNING] Task failed
+2022-07-18 10:30:46,068 [DEBUG] Waiting for task
+2022-07-18 10:30:46,068 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:30:46,068 [INFO] No new sample
+2022-07-18 10:31:07,125 [WARNING] Task failed
+2022-07-18 10:31:07,125 [DEBUG] Waiting for task
+2022-07-18 10:31:07,125 [INFO] No new sample
+2022-07-18 10:31:07,125 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:31:28,164 [WARNING] Task failed
+2022-07-18 10:31:28,164 [DEBUG] Waiting for task
+2022-07-18 10:31:28,164 [INFO] No new sample
+2022-07-18 10:31:28,164 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:31:49,206 [WARNING] Task failed
+2022-07-18 10:31:49,206 [DEBUG] Waiting for task
+2022-07-18 10:31:49,206 [INFO] No new sample
+2022-07-18 10:31:49,206 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:32:10,249 [WARNING] Task failed
+2022-07-18 10:32:10,249 [DEBUG] Waiting for task
+2022-07-18 10:32:10,249 [INFO] No new sample
+2022-07-18 10:32:10,249 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:32:31,294 [WARNING] Task failed
+2022-07-18 10:32:31,294 [DEBUG] Waiting for task
+2022-07-18 10:32:31,294 [INFO] No new sample
+2022-07-18 10:32:31,294 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:32:52,338 [WARNING] Task failed
+2022-07-18 10:32:52,338 [DEBUG] Waiting for task
+2022-07-18 10:32:52,338 [INFO] No new sample
+2022-07-18 10:32:52,338 [DEBUG] New task with func MksEthWidget.__init__.<locals>.<lambda>.<locals>.<lambda>
+2022-07-18 10:33:13,368 [WARNING] Task failed
+2022-07-18 10:33:13,387 [DEBUG] ['Traceback (most recent call last):\n', '  File "C:\\Users\\Mirek\\Documents\\Projects\\PyCharm\\MKSGUI\\driver\\MksEthMfc.py", line 103, in run\n    task.signal.emit(task.func())\n', '  File "C:\\Users\\Mirek\\Documents\\Projects\\PyCharm\\MKSGUI\\gui\\MksEthWidget.py", line 31, in <lambda>\n    lambda: self.mks_mfc.get_flow(),\n', '  File "C:\\Users\\Mirek\\Documents\\Projects\\PyCharm\\MKSGUI\\driver\\MksEthMfc.py", line 25, in get_flow\n    return decode_ieee(word_list_to_long(self.modbus_client.read_input_registers(0x4000, 2))[0])\n', '  File "C:\\Users\\Mirek\\Documents\\Projects\\PyCharm\\MKSGUI\\venv\\lib\\site-packages\\pyModbusTCP\\utils.py", line 124, in word_list_to_long\n    for index in range(int(len(val_list) / block_size)):\n', "TypeError: object of type 'NoneType' has no len()\n", '\nDuring handling of the above exception, another exception occurred:\n\n', 'Traceback (most recent call last):\n', '  File "C:\\Users\\Mirek\\Documents\\Projects\\PyCharm\\MKSGUI\\driver\\MksEthMfc.py", line 106, in run\n    task.signal.emit(task.error_return)\n', "AttributeError: 'MksEthMfcWorkerSignals' does not have a signal with the signature flow_ready(double)\n"]
