@@ -1,4 +1,3 @@
-import ipaddress
 from enum import Enum
 from typing import Iterable
 

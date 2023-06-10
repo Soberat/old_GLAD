@@ -1,16 +1,13 @@
-# This is a sample Python script.
+import sys
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from PyQt5.QtWidgets import QApplication
 
+from gui.WP8026ADAMWidget import WP8026ADAMWidget
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    app = QApplication([])
+    widget = WP8026ADAMWidget()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    widget.show()
+
+    sys.exit(app.exec())
