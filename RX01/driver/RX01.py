@@ -5,10 +5,6 @@ import serial
 import logging
 
 
-def TODO():
-    raise NotImplementedError()
-
-
 class RX01:
     class RX01Model(Enum):
         R301 = auto()
@@ -27,14 +23,14 @@ class RX01:
         OK = "0"
         FAULT = "1"
 
-    def __init__(self, model: RX01Model, comport="COM1", baudrate=9600):
+    def __init__(self, model: RX01Model, comport="COM1", baudrate=19200):
         self.model = model
         self.__serial = serial.Serial(port=comport, baudrate=baudrate)
 
     def __write_and_read(self, command: str, expected_response: Union[str, None] = "\r") -> Union[str, bool]:
         logging.debug(f"Writing {command}\r")
         self.__serial.write(f"{command}\r".encode())
-        response = self.__serial.read().decode()
+        response = self.__serial.read_until(b"\r").decode()
 
         logging.debug(f"Response for {command}\r: {response}")
 
@@ -70,7 +66,7 @@ class RX01:
 
         device_value_string = str(int(round(freq_in_mhz, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_FQ")
+        return self.__write_and_read(f"{device_value_string} FQ")
 
     def set_exciter_mode_to_master(self) -> bool:
         return self.__write_and_read("MST")
@@ -92,21 +88,18 @@ class RX01:
 
     def set_power_setpoint(self, setpoint_in_watts: int):
         assert setpoint_in_watts <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{setpoint_in_watts:04}_W")
+        return self.__write_and_read(f"{setpoint_in_watts} W")
 
     def disable_power_and_rf_output(self):
         return self.__write_and_read("WS")
 
     def set_power_setpoint_and_enable_rf_output(self, setpoint_in_watts: int):
         assert setpoint_in_watts <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{setpoint_in_watts:04}_WG", "\r\r")
+        return self.__write_and_read(f"{setpoint_in_watts} WG", "\r\r")
 
     def set_voltage_setpoint(self, voltage_in_volts: int):
         assert voltage_in_volts <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{voltage_in_volts:04}_V")
+        return self.__write_and_read(f"{voltage_in_volts} V")
 
     def set_process_pulse_duty_cycle(self, duty_cycle: float):
         if self.model == RX01.RX01Model.R301:
@@ -116,28 +109,25 @@ class RX01:
 
         device_value_string = str(int(round(duty_cycle, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_D")
+        return self.__write_and_read(f"{device_value_string} D")
 
     def set_process_pulse_frequency(self, frequency_in_hertz: int):
         assert 1 <= frequency_in_hertz <= 1000
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{frequency_in_hertz:04}_PR")
+        return self.__write_and_read(f"{frequency_in_hertz} PR")
 
     def set_process_pulse_high_time(self, pulse_high_time_in_ms: int):
         if self.model == RX01.RX01Model.R301:
             return False
 
         assert 1 <= pulse_high_time_in_ms <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{pulse_high_time_in_ms:04}_HT")
+        return self.__write_and_read(f"{pulse_high_time_in_ms} HT")
 
     def set_process_pulse_low_power_setpoint(self, pulse_low_power_setpoint_in_watts: int):
         if self.model != RX01.RX01Model.R301:
             return False
 
         assert 1 <= pulse_low_power_setpoint_in_watts <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{pulse_low_power_setpoint_in_watts:04}_LP")
+        return self.__write_and_read(f"{pulse_low_power_setpoint_in_watts} LP")
 
     def enable_pulse_mode(self):
         return self.__write_and_read("+P")
@@ -150,45 +140,45 @@ class RX01:
 
         device_value_string = str(int(round(ratio, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_CR")
+        return self.__write_and_read(f"{device_value_string} CR")
 
     def set_vft_coarse_frequency_step(self, step: int):
         assert 1 <= step <= 10000
 
-        return self.__write_and_read(f"{step:05}_CF")
+        return self.__write_and_read(f"{step:05} CF")
 
     def set_vft_fine_frequency_step(self, step: int):
         assert 1 <= step <= 10000
 
-        return self.__write_and_read(f"{step:05}_FF")
+        return self.__write_and_read(f"{step:05} FF")
 
     def set_vft_fine_trip_level(self, level: float):
         assert 0 <= level <= 1
 
         device_value_string = str(int(round(level, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_FT", "\r\r")
+        return self.__write_and_read(f"{device_value_string} FT", "\r\r")
 
     def set_maximum_vft_frequency(self, frequency_in_mhz: int):
         assert 1.7 <= frequency_in_mhz <= 2.1
 
         device_value_string = str(int(round(frequency_in_mhz, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_MAXVF")
+        return self.__write_and_read(f"{device_value_string} MAXVF")
 
     def set_minimum_vft_frequency(self, frequency_in_mhz: int):
         assert 1.7 <= frequency_in_mhz <= 2.1
 
         device_value_string = str(int(round(frequency_in_mhz, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_MINVF")
+        return self.__write_and_read(f"{device_value_string} MINVF")
 
     def set_vft_strike_frequency(self, frequency_in_mhz: int):
         assert 1.7 <= frequency_in_mhz <= 2.1
 
         device_value_string = str(int(round(frequency_in_mhz, 1) * 100))
 
-        return self.__write_and_read(f"{device_value_string}_SF")
+        return self.__write_and_read(f"{device_value_string} SF")
 
     def enable_variable_frequency_tuning(self):
         return self.__write_and_read("VX")
@@ -210,13 +200,11 @@ class RX01:
 
     def set_rf_output_rampdown_time_interval(self, interval_in_seconds: int):
         assert 1 <= interval_in_seconds <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{interval_in_seconds:04}_DN")
+        return self.__write_and_read(f"{interval_in_seconds} DN")
 
     def set_rf_output_rampup_time_interval(self, interval_in_seconds: int):
         assert 1 <= interval_in_seconds <= 9999
-        # TODO: Zeropad is possibly not needed/unwanted
-        return self.__write_and_read(f"{interval_in_seconds:04}_UP")
+        return self.__write_and_read(f"{interval_in_seconds} UP")
 
     def get_forward_power_output(self):
         # doc does not list carriage return in command
@@ -284,7 +272,7 @@ class RX01:
         # XXXXXXX is a 7 - character ASCII mapped string as described
         # below (characters are counted left - to - right)
         response = self.__write_and_read("Q", None)
-        other, setpoint, forward_power, reflected_power, max_power = response.split("_")
+        other, setpoint, forward_power, reflected_power, max_power = response.split(" ")
 
         return_data = {
             "setpoint": int(setpoint),
